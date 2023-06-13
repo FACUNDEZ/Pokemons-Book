@@ -1,0 +1,109 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: sans-serif;
+    background-color: pink;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 70px 1fr;
+    width: 100%;
+    max-width: 850px;
+    height: 430px;
+    margin: 150px auto;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 10px;
+}
+
+.container .mitad {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #ffe6e6;
+}
+
+.half {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 0 30px;
+    background-color: #ffe6e6;
+    border: 1px solid #bfbfbf;
+}
+
+.half .block {
+    margin-left: -30px;
+    margin-right: -30px;
+    height: 60px;
+    border: 1px solid #bfbfbf;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+
+.list-pokemons {
+    width: 350px;
+    height: 370px;
+    border: 1px solid #bfbfbf;
+    border-radius: 15px;
+    background-color: #e6f9ff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #e6f9ff;
+    display: grid;
+    grid-template-columns: 1fr 1fr; 
+    align-content: center;
+    gap: 18px;
+    padding-left: 30px;
+    list-style: none;
+    overflow: hidden;
+    font-style: italic;
+}
+
+.shown-pokemon {
+    width: 350px;
+    height: 370px;
+    border: 1px solid #bfbfbf;
+    border-radius: 15px;
+    background-color: #e6f9ff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2), 0 0 20px rgba(0, 0, 0, 0.1);
+    background-color: #e6f9ff;
+    text-align: center;
+    font-style: italic;
+    overflow: hidden;
+}
+
+.shown-pokemon h2 {
+    font-size: 30px;
+    padding-top: 20px;
+}
+
+.shown-pokemon img {
+    width: 130px;
+    height: 130px;
+}
+
+.shown-pokemon p {
+    padding-bottom: 10px;
+    font-weight: bold;
+}
+
+.list-pokemons button {
+    margin-right: 30px;
+    list-style: none;
+    cursor: pointer;
+    font-style: italic;
+}
+
+
+
+
+
+
+
